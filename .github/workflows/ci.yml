@@ -1,0 +1,15 @@
+name: use upx
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: ffx0s/upx-actions@master
+      with:
+        bucket: "${{secrets.BUCKET}}"
+        operator: ${{ secrets.OPERATOR }}
+        password: ${{ secrets.PASSWORD }}
+    - run: upx -v
+    - run: upx sessions

@@ -1,0 +1,24 @@
+{
+  "name": "upx-actions",
+  "version": "1.0.0",
+  "description": "upx actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffx0s/upx-actions.git"
+  },
+  "author": "ffx0s",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ffx0s/upx-actions/issues"
+  },
+  "homepage": "https://github.com/ffx0s/upx-actions#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/exec": "^1.0.3",
+    "@actions/tool-cache": "^1.3.1"
+  }
+}
