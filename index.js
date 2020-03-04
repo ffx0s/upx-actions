@@ -14,6 +14,16 @@ async function main () {
   const operator = core.getInput('operator')
   const password = core.getInput('password')
 
+  if (!bucket) {
+    core.info('no bucket')
+  }
+  if (!operator) {
+    core.info('no operator')
+  }
+  if (!password) {
+    core.info('no password')
+  }
+
   let toolPath = toolCache.find('upx', '0.2.4')
 
   if (!toolPath) {
