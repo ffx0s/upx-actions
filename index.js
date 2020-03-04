@@ -34,10 +34,7 @@ async function main () {
 
   core.addPath(bin)
 
-  await exec('upx', [
-    'login',
-    `${bucket} ${operator} ${password}`
-  ])
+  await exec(`upx login ${bucket} ${operator} ${password}`)
 }
 
 main().catch(error => {
